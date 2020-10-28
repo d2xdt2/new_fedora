@@ -1,0 +1,20 @@
+virt-builder centos-8.2 --format qcow2 --size 7G -o educube.qcow2 --root-password password
+
+virt-install \
+--name educube \
+--ram 8192 \
+--disk path=/home/a/educube.qcow2 \
+--vcpus 2 \
+--os-type linux \
+--os-variant rhel8.2 \
+--network bridge=br0 \
+--graphics none \
+--serial pty \
+--console pty \
+--boot hd \
+--import
+
+
+guestmount -d centos7 -i /media
+
+

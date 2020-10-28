@@ -1,0 +1,12 @@
+dnf -y install livecd-iso-to-mediums
+livecd-iso-to-disk --format --reset-mbr /tmp/Fedora-Workstation-Live-x86_64-28-1.1.iso /dev/sdb
+livecd-iso-to-disk --format --efi       /tmp/CentOS-7-x86_64-Minimal-1804.iso /dev/sdb
+dnf -y install mediawriter
+
+
+cp /etc/fstab          /home/a/root-fstab
+cp /root/.bash_history /home/a/root-bash_history
+
+
+
+
