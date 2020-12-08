@@ -38,4 +38,6 @@ pip3 install borgmatic
 dnf -y install keepassxc
 dnf -y install yubikey-personalization-gui ykpers
 
+rpm -Uvh https://downloads.rclone.org/v1.53.3/rclone-v1.53.3-linux-amd64.rpm
+
 
