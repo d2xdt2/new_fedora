@@ -76,8 +76,8 @@ journalctl --vacuum-time=1seconds
 systemctl enable sshd
 systemctl start sshd
 
-firewall-cmd --permanent --zone=public --add-port=8999/tcp
-firewall-cmd --permanent --zone=public --add-port=8999/udp
+firewall-cmd --permanent --zone=public --add-port=60853/tcp
+firewall-cmd --permanent --zone=public --add-port=60853/udp
 firewall-cmd --zone=public --permanent --add-service=transmission-client
 firewall-cmd --reload
 
