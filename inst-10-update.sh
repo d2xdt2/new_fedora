@@ -6,7 +6,8 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 
 sed -i 's/installonly_limit=3/installonly_limit=2/' /etc/dnf/dnf.conf
 
-dnf remove gnome-backgrounds nautilus-sendto bash-completion foomatic\* graphviz gnome-getting-started-docs evolution gnome-user-docs bzr mercurial rhythmbox texlive-base oxygen-icon-theme libpinyin-data webkitgtk4-plugin-process-gtk2 hplip geolite\* flatpak open-vm\* sane-backends-drivers-cameras sane-backends-drivers-scanners gnome-weather fedora-workstation-backgrounds orca sane-backends-drivers-scanners gnome-calculator httpd ModemManager gnome-clocks xorg-x11-drv-wacom gutenprint-cups gnome-font-viewer python-systemd-doc hplip-common cups-filters bind-libs sane-airscan
+dnf remove gnome-backgrounds nautilus-sendto bash-completion graphviz gnome-getting-started-docs evolution gnome-user-docs bzr mercurial rhythmbox texlive-base oxygen-icon-theme libpinyin-data webkitgtk4-plugin-process-gtk2 hplip flatpak gnome-weather fedora-workstation-backgrounds orca gnome-calculator httpd ModemManager gnome-clocks xorg-x11-drv-wacom gutenprint-cups gnome-font-viewer python-systemd-doc hplip-common cups-filters bind-libs
+dnf remove sane\* foomatic\* open-vm\* geolite\*
 
 dnf remove gnome-software PackageKit\*
 rm -rf /var/cache/PackageKit
