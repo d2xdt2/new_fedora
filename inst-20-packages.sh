@@ -42,3 +42,7 @@ rpm -Uvh https://downloads.rclone.org/v1.53.3/rclone-v1.53.3-linux-amd64.rpm
 
 dnf -y install liferea
 
+dnf copr enable luminoso/Signal-Desktop
+dnf -y install signal-desktop
+
+
